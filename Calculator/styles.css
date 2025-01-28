@@ -33,7 +33,6 @@ body {
             gap: 10px;
         }
 
-
         .button {
             background: #fff;
             border: none;
@@ -47,17 +46,6 @@ body {
         .button:active {
             background: #e0e0e0;
         }
-
-
-        .button:nth-child(14) {
-            background: #f44336;
-            color: #fff;
-        }
-
-        .button:nth-child(14):active {
-            background: #d32f2f;
-        }
-
 
         .button.operator {
             background: #ff9800;
@@ -76,4 +64,13 @@ body {
 
         .button.equal:active {
             background: #43a047;
+        }
+
+        .button.special {
+            background: #f44336;
+            color: #fff;
+        }
+
+        .button.special:active {
+            background: #d32f2f;
         }
