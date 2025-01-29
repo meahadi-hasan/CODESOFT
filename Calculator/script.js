@@ -9,37 +9,36 @@ let display = document.getElementById('display');
                 currentInput = '';
                 shouldResetDisplay = false;
             }
-            if (currentInput === '0' && number === 0) return;
             currentInput += number;
-            if (operator && firstOperand !== null) {
-                updateDisplay(`${firstOperand} ${operator} ${currentInput}`);
-            } else {
-                updateDisplay(currentInput);
-            }
+            updateDisplay(currentInput);
         }
 
         function setOperator(op) {
-            if (currentInput === '') return;
-            if (firstOperand === null) {
-                firstOperand = parseFloat(currentInput);
-            } else if (operator) {
-                calculateResult();
-                firstOperand = parseFloat(display.textContent.split(' ')[0]);
+            if (currentInput === '' && operator !== null) {
+                operator = op;
+                updateDisplay(`${firstOperand} ${operator}`);
+                return;
             }
+        
+            if (currentInput !== '') {
+                firstOperand = currentInput;
+            }
+        
             operator = op;
-            shouldResetDisplay = true;
-            updateDisplay(`${firstOperand} ${operator}`);
+            currentInput += ` ${operator} `;
+            updateDisplay(currentInput);
+            shouldResetDisplay = false;
         }
 
         function calculateResult() {
-            if (operator && currentInput !== '') {
-                let secondOperand = parseFloat(currentInput);
-                let result = operate(operator, firstOperand, secondOperand);
-                updateDisplay(`${firstOperand} ${operator} ${secondOperand} = ${result}`);
+            try {
+                let result = new Function('return ' + currentInput)();
+                updateDisplay(`${currentInput} = ${result}`);
                 currentInput = result.toString();
-                operator = null;
-                firstOperand = null;
                 shouldResetDisplay = true;
+            } catch (error) {
+                updateDisplay("Error");
+                currentInput = "";
             }
         }
 
@@ -64,3 +63,5 @@ let display = document.getElementById('display');
                 default: return b;
             }
         }
+
+      
