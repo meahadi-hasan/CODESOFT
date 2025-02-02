@@ -10,3 +10,7 @@ document.querySelector('.create-account').addEventListener('click', function() {
 document.querySelector('.search-icon').addEventListener('click', function() {
     alert('Search clicked!');
 });
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
