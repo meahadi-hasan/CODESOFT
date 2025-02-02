@@ -1,0 +1,150 @@
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Top Navigation */
+    .top-nav {
+        padding: 8px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons,
+    .contact-info {
+        display: none;
+    }
+
+    .account {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .create-account {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Main Navigation */
+    .navbar {
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .logo {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links .buy-now {
+        background: none;
+        color: #333;
+        padding: 0;
+    }
+
+    /* Hamburger Menu Icon */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 60vh;
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 25%;
+        margin: 5px 0;
+    }
+
+    /* Features Section */
+    .features {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .about-text {
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .about-image {
+        width: 100%;
+        order: 1;
+    }
+
+    /* Services Section */
+    .our-services h2 {
+        margin-right: 0;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .service {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    /* General Mobile Adjustments */
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
