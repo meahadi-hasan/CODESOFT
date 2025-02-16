@@ -29,12 +29,19 @@
     });
 
 
-    // hamburger menu toggle
-const hamburger = document.getElementById("hamburger");
+ // hamburger menu toggle
+const menuIcon = document.getElementById("menu-icon");
+const menuIconBars = document.getElementById("menu-icon-bars");
+const menuIconTimes = document.getElementById("menu-icon-times");
 const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
+menuIcon.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    if (navLinks.classList.contains("active")) {
+        menuIconBars.style.display = "none";
+        menuIconTimes.style.display = "block";
+    } else {
+        menuIconBars.style.display = "block";
+        menuIconTimes.style.display = "none";
+    }
 });
-
-
