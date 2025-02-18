@@ -1,4 +1,3 @@
-
 // scrollBtn
     const scrollBtn = document.getElementById("scrollBtn");
 
