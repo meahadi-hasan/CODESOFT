@@ -13,7 +13,7 @@ The projects included are aimed at improving my skills in web development and pr
 ## 🚀 Live Site  
 - 🔢 **Calculator**: [Live Site](https://wbasic-calculator.netlify.app)  
 - 🌍 **Landing Page**: [Live Site](https://demo-landing-page01.netlify.app)  
-- 👨‍💻 **Portfolio**: [Live Site](https://meahadi-hasan.netlify.app)  
+- 👨‍💻 **Portfolio**: [Live Site](https://mdmeahadi.netlify.app)  
 
 ## 🛠️ Technologies Used  
 - **HTML, CSS, JavaScript**  
