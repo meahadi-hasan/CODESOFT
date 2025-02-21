@@ -97,8 +97,6 @@ body {
     border-radius: 5px;
 }
 
-
-
 /* Hero Section */
 .hero {
     height: 80vh;
@@ -161,8 +159,8 @@ body {
     color: white;
 }
 
-/* Features Section */
 
+/* Features Section */
 .features {
     display: flex;
     justify-content: space-around;
@@ -187,6 +185,7 @@ body {
     color: #FFFFFF;
     
 }
+
 
 /* About Section */
 .about {
@@ -231,6 +230,7 @@ body {
     width: 100%;
     border-radius: 10px;
 }
+
 
 /* Our Services Section */
 .our-services {
@@ -413,4 +413,3 @@ body {
         font-size: 20px;
     }
 }
-
