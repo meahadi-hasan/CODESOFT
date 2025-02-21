@@ -63,5 +63,3 @@ let display = document.getElementById('display');
                 default: return b;
             }
         }
-
-      
